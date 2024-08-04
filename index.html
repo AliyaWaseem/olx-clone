@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/olxbrowserlogo.jpg">
+  <title>OLX-Buy and Sell for free anywhere</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <!-- <div class="header">
+        <div>
+        <div class="top-bar-items">
+        <img src="assets/OLX-Logo.png" width="50" >
+        </div>
+        <div class="top-bar-items">
+            <a class="svg" href=""><i class="fa-solid fa-car"></i></a>
+            <a href="">Motors</a>
+        </div>
+        <div class="top-bar-items">
+            <a class="svg" href=""><i class="bi bi-buildings-fill"></i></a>
+            <a href="">Property</a>
+        </div>
+        </div>
+        <div class="header-bottom">
+            <div class="top-bar-items">
+                <img src="assets/olx-logo-vector.png" alt="" width="60px" />
+            </div>
+            <div class="top-bar-items">
+                <select class="select-input" name="" id="">
+                    <option value="khi">Karachi</option>
+                    <option value="lhr">Lahore</option>
+                    <option value="isb">Islamabad</option>
+                    <option value="pes">Peshawar</option>
+                </select>
+            </div>
+            <div class="top-bar-items">
+                <input type="search" class="select-input search" placeholder="Find Cars, Mobiles, Jobs...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="top-bar-items">
+                <a class="link" href="#">Login</a>
+                <button class="sell-button"><i class="fa-solid fa-plus"></i> Sell </button>
+    
+        </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
+
+  <!-- NavBar -->
+
+  <nav class="header container-fluid">
+    <div class="nav-bar container">
+      <div class="first-nav row">
+        <div class="logo col col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 mt-2 me-3">
+          <a href="./index.html">
+            <img src="./assets/Logotyp_OLX_.png" class="first-nav-img">
+          </a>
+        </div>
+
+
+        <div class="col col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 text-center">
+          <div class="Motors">
+            <a class="svg" href="https://www.olx.com.pk/motors/" class="Car">
+              <i class="bi-car-front fs-3"></i>
+              <p class="ms-4 textnav">Motors</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+          <div class="property">
+            <a class="svg" href="#" class="building">
+              <i class="bi-buildings fs-3"></i>
+              <p class="ms-4 textnav">Property</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===toogle=== -->
+      <div class="row">
+        <div class="toogle col col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1">
+          <nav class="navbar ">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="toogle1 col col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="second-nav row">
+              <!-- <div class="logo1 col col-4 col-sm-2 col-md-2 col-lg-1">
+                <img src="" class="olxlogo">
+              </div> -->
+
+              <div class="select col col-8 col-sm-3 col-md-3 col-lg-3">
+
+                <input type="search" class="searchclass mt-1 ps-5" placeholder="Pakistan">
+                <i class="bi bi-geo-alt pb-3 ps-2 fs-4 fw-bold"></i>
+              </div>
+
+              <div class="search_box col col-12 col-sm-5 col-md-6 col-lg-7">
+                <input type="search" class="searchclass mt-1" placeholder="Find Cars, mobile phone and More....">
+                <i class="fa-solid fa-magnifying-glass mt-1"></i>
+              </div>
+
+              <div class=" col col-2 col-sm-1 col-md-1 col-lg-1 p-0">
+                <div class="login">
+                  <a id="log" href="./login.html">Login</a>
+                </div>
+              </div>
+
+              <div class="col col-3 col-sm-2 col-md-1 col-lg-1">
+                <div class="selling_page">
+                  <button>
+                    <i class="fa-solid fa-plus"></i>
+                    <p>SELL</p>
+                  </button>
+                </div>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#olxNavbar"><span
+                    class="navbar-toggler-icon"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <!-- =========toogle==== -->
+
+
+    </div>
+  </nav>
+
+  <!-- categories -->
+
+  <div class="categories container-fluid">
+    <div class="categories-div container">
+      <div>
+        <ul class="categories-list col ">
+          <li class="nav-item col">
+            <a class="nav-link dropdown-toggle active" id="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ALL CATEGORIES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mobile</a></li>
+              <li><a class="dropdown-item" href="#">Cars</a></li>
+              <li><a class="dropdown-item" href="#">Motorcycles</a></li>
+              <li><a class="dropdown-item" href="#">Houses</a></li>
+              <li><a class="dropdown-item" href="#">TV-Video-Audio</a></li>
+              <li><a class="dropdown-item" href="#">Tablets</a></li>
+              <li><a class="dropdown-item" href="#">Land & Plots</a></li>
+            </ul>
+          </li>
+          <li class="nav-item col ">
+            <a class="nav-link" href="#">Mobile Phones</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Cars</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Motorcycles</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Houses</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Video-Audio</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Tablets</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Land & Plots</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Jobs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ads -->
+
+  <div id="carouselExampleAutoplaying" class="container carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/addslide.webp" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/addslide.webp" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/addslide.webp" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+
+  <!-- Products -->
+
+  <div class="container mt-5" id="product-container">
+    <h3 class="fw-bold fs-4">All categories</h3>
+
+
+    <div class="categories-section mt-4">
+
+      <div class="product-container ms-0">
+        <a><img src="Assets/mobile-category.png" alt="mobile-category-image">
+          <h6>Mobiles</h6>
+        </a>
+        <a><img src="Assets/vehicle-category.png" alt="vehicle-category-image">
+          <h6>Vehicles</h6>
+        </a>
+        <a><img src="Assets/sale property-category.png" alt="sale-property-category-image">
+          <h6>Propety for sale</h6>
+        </a>
+        <a><img src="Assets/rent property-category.png" alt="rent-property-category-image">
+          <h6>Property for Rent</h6>
+        </a>
+        <a><img src="Assets/electronics-category.png" alt="electronic-category-image">
+          <h6>Electronics & Home Appliances</h6>
+        </a>
+        <a><img src="Assets/bike-category.png" alt="bike-category-image">
+          <h6>Bike</h6>
+        </a>
+        <a><img src="Assets/business-category.png" alt="business-category-image">
+          <h6>Business, Industrial & Agriculture</h6>
+        </a>
+        <a><img src="Assets/services-category.png" alt="services-category-image">
+          <h6>Services</h6>
+        </a>
+        <a><img src="Assets/job-category.png" alt="job-category-image">
+          <h6>Jobs</h6>
+        </a>
+        <a><img src="Assets/animal-category.png" alt="animal-category-image">
+          <h6>Animals</h6>
+        </a>
+        <a><img src="Assets/furniture-category.png" alt="furniture-category-image">
+          <h6>Furniture & Home Decor</h6>
+        </a>
+        <a><img src="Assets/fashion-category.png" alt="fashion-category-image">
+          <h6>Fashion & Beauty</h6>
+        </a>
+        <a><img src="Assets/book-category.png" alt="book-category-image">
+          <h6>Books, Sports & Hobbies</h6>
+        </a>
+        <a><img src="Assets/kids-category.png" alt="kids-category-image">
+          <h6>Kids</h6>
+        </a>
+      </div>
+    </div>
+    <!--product section end-->
+    
+    <!-- <div id='row-1' class="row mt-3">
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="./images/p1.jpg" class="cardimg car" alt="...">
+        </div>
+        <div id='cardbo' class="card-body">
+          <p class="card-text">Wooden Showcase</p>
+          <h5 class="card-title">Rs 5,000 </h5>
+          <p class="card-text"><small class="text-muted">Walton Road Lahore. 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6  col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="./images/p2.jpg" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Honda city idsi</p>
+          <h5 class="card-title">Rs 1,210,000 </h5>
+          <p class="card-text"><small class="text-muted">Nazimabad Karachi. 1 week ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6  col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="./images/p3.jpg" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">sugarpot milk tea pot</p>
+          <h5 class="card-title">Rs 2,500 </h5>
+          <p class="card-text"><small class="text-muted">Johar Town Lahore. 0 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6  col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="./images/p4.jpg" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Rs 35,000 </h5>
+          <p></p>
+          <h5 class="card-text">iPhone 7plus 128GB</h5>
+          <p></p>
+          <p class="lead card-text">Walton Road Lahore.</p>
+          <p class="card-text"><small class="text-muted">45 mins ago</small></p> 
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
+    <!--cards section start-->
+
+    <!-- MOBILE CARD SECTION START -->
+    <div class="mobile-card" id="mobile-card">
+      <div class="card-info">
+        <h4>Mobile Phones</h4>
+        <button class="viewmore-button">View more <img src="Assets/right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+    
+      <div class="row g-5 ps-0">
+        <!-- CARD NO 1 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/samsung note 10 plus card.jpg" class="card-img-top" alt="samsung card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 34,500 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Samsung Galaxy Note 10 plus 5G Approved</p>
+            <p>Sadar, Karachi<br>
+            2 days ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/tecno spark 20 pro card.webp" class="card-img-top" alt="tecno card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 7,800 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Tecno Spark 20 Pro Plus (8,512GB) available on Easy Installments Plan </p>
+            <p>Gulberg 2, Lahore<br>
+            1 week ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/oppo F11 card.jpg" class="card-img-top" alt="oppo card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 19,500 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Oppo F11 (8GB-256GB) PTA approved big offer</p>
+            <p>Satellite Town, Rawalpindi<br>
+            3 weeks ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/iphone 15 pro max card.jpeg" class="card-img-top" alt="iphone card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 485,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Iphone 15 Pro Max HK Model pta approved non active</p>
+            <p>Allama Iqbal Town, Lahore<br>
+            1 week ago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- MOBILE CARDS SECTION END -->
+
+    <!-- CARS CARDS SECTION START -->
+    
+    <div class="car-card ">
+      <div class="card-info">
+        <h4>Cars</h4>
+        <button class="viewmore-button">View more <img src="Assets/right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+    
+     
+    
+      <div class="row g-5 ps-0">
+        <!-- CARD NO 1 -->
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/honda civic card.webp" class="card-img-top" alt="honda card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 2,500,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Honda Civic 2009</p>
+            <p>DHA, Karachi <br>
+            4 days ago</p>
+          </div>
+        </div>
+      </div>
+        <!-- CARD NO 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/toyota c-hr card.webp" class="card-img-top" alt="toyota card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 7,900,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Toyota C-HR G-LED 2017</p>
+            <p>Ghauri Town, Islamabad<br>
+            3 days ago</p>
+          </div>
+        </div>
+      </div>
+        <!-- CARD NO 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/car3.webp" class="card-img-top" alt="suzuki card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 1,055,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Suzuki Liana Model 2006 100% original condition</p>
+            <p>Haroo Road, Karachi. <br>
+            2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+        <!-- CARD NO 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/suzuki cultus card.jpg" class="card-img-top" alt="cultus card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 970,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Suzuki Cultus VX 2008 Model</p>
+            <p>GT Road, Taxila <br>
+            2 days ago</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+     
+    <!-- CARS CARDS SECTION END -->
+
+    <!-- BIKEs CARDS SECTION START -->
+    <div class="bike-card" id="bike-card">
+      <div class="card-info">
+        <h4>Bikes & Motorcycles</h4>
+        <button class="viewmore-button">View more <img src="Assets/right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+    
+      <div class="row g-5 ps-0">
+        <!-- CARD NO 1 -->
+      
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/bike1.webp" class="card-img-top" alt="heavy bike card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 235,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Super Power LEO 200CC Heavy Bikes</p>
+            <p>North Nazimabad, Karachi<br>
+            3 weeks ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/125 bike card.webp" class="card-img-top" alt="125 card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 158,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Honda 125 First owner </p>
+            <p>Canal Garden, Lahore<br>
+            5 hours ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/150 bike card.PNG" class="card-img-top" alt="150 card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 395,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Hi speed infinity 150</p>
+            <p>Gulberg, Karachi<br>
+            7 hours ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/bike3.webp" class="card-img-top" alt="yamaha card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 280,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Yamaha YBR 125G 2017</p>
+            <p>Cantt, Rawalpindi<br>
+            9 hours ago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- BIKEs CARDS SECTION END -->
+
+    <!-- HOUSES CARDS SECTION START -->
+    <div class="house-card" id="house-card">
+      <div class="card-info">
+        <h4>Houses</h4>
+        <button class="viewmore-button">View more <img src="Assets/right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+
+      <div class="row g-5 ps-0">
+        <!-- CARD NO 1 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/house1.webp" class="card-img-top" alt="punjab house card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 19,200,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">3 Years Installment plan luxury 2 Marla House</p>
+            <p>Okara, Punjab<br>
+            4 hours ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/karachi house card.PNG" class="card-img-top" alt="karachi house card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 43,000,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">With Basement 5 Beds Modern Kitchen House </p>
+            <p>DHA Phase 4, Karachi<br>
+            2 weeks ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/house3.webp" class="card-img-top" alt="taxila card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 18,000,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">5 Marla Designer House with Modern Elevation</p>
+            <p>Faisal Hills, Taxilla<br>
+            14 hours ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/house4.webp" class="card-img-top" alt="lahore card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 9,500,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Double Story 4 Marla Corner House With Modern Kitchen</p>
+            <p>Ferozepur Road, Lahore<br>
+            1 week ago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- HOUSES CARDS SECTION END -->
+
+    <!-- TABLETS CARDS SECTION START -->
+    <div class="tablet-card" id="tablet-card">
+      <div class="card-info">
+        <h4>Tablets</h4>
+        <button class="viewmore-button">View more <img src="Assets/right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+
+      <div class="row g-5 ps-0">
+        <!-- CARD NO 1 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/samsung tab card.webp" class="card-img-top" alt="samsung tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 7,999 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Samsung Gaming Tabs for Kids</p>
+            <p>Gulberg 3, Lahore<br>
+            3 weeks ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/lenovo tab card.PNG" class="card-img-top" alt="lenovo tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 48,999 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Lenovo Tab P11 Pro 2nd Gen 6/128 8/256 GB </p>
+            <p>Johar Town, Lahore<br>
+            1 week ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/tablet3.webp" class="card-img-top" alt="ipad tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 167,999 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">ipad pro m1 chip 512gb 3rd generation 2021</p>
+            <p>DHA, Karachi<br>
+            2 weeks ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/apple tab card.webp" class="card-img-top" alt="apple tab card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 205,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Apple Ipad Pro 4, Pro 6. M2 Chip.</p>
+            <p>Hall Road, Lahore<br>
+            3 weeks ago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- TABLETS CARDS SECTION END -->
+
+    <!-- LAND CARDS SECTION START -->
+    <div class="plot-card" id="plot-card">
+      <div class="card-info">
+        <h4>Lands & Plots</h4>
+        <button class="viewmore-button">View more <img src="Assets/right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+    
+      <div class="row g-5 ps-0">
+        <!-- CARD NO 1 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/land1.webp" class="card-img-top" alt="lahore plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 6,450,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">1 Kanal Plot For Sale On Easy Installments Plan</p>
+            <p>Etihad Town, Lahore<br>
+            8 days ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/land2.webp" class="card-img-top" alt="sukkar plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 8,000,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">3 Marla Plot File For Sale in Residential Area </p>
+            <p>Khairpur, Sukkur<br>
+            1 week ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/land3.webp" class="card-img-top" alt="karachi plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 14,000,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">240 Yards Plot With A Best Location</p>
+            <p>Gulshan e Maymar, Karachi<br>
+            10 hours ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/land4.webp" class="card-img-top" alt="hyderabad plot card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 5,200,000 <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Residential Plot Of 120 Yard In A Good Area</p>
+            <p>Latif Abad, Hyderabad<br>
+            1 month ago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- LAND CARDS SECTION END -->
+
+    <!-- JOBS CARDS SECTION START -->
+    <div class="job-card" id="job-card">
+      <div class="card-info">
+        <h4>Jobs</h4>
+        <button class="viewmore-button">View more <img src="Assets/right arrow icon.png" alt="rightArrow-icon"></button>
+      </div>
+    
+      <div class="row g-5 ps-0">
+        <!-- CARD NO 1 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/teacher job card.PNG" class="card-img-top" alt="teacher card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 20,000/month <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Science & English Teachers Required for Middle & Secondary Classes</p>
+            <p>Model City 1, Faisalabad<br>
+            6 days ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 2 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/content writer job card.webp" class="card-img-top" alt="content writer card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 12,000/month <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Hiring a Creative Content Writer & Facebook Expert </p>
+            <p>Samnabad, Karachi<br>
+            3 weeks ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 3 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/subtitle job card.webp" class="card-img-top" alt="subtitle card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 15,000/month <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Great Opportunity of Writing Subtitles in Youtube Videos </p>
+            <p>Manzoor Colony, Karachi<br>
+            2 days ago</p>
+          </div>
+        </div>
+        </div>
+        <!-- CARD NO 4 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="Assets/assignment job card.PNG" class="card-img-top" alt="assignment card image">
+          <div class="card-body">
+            <h5 class="card-title">Rs 10,000/month <img src="Assets/heart icon.png" alt="heart-icon"></h5>
+            <p class="card-text">Urgent Requirement for Hand Written Assignments </p>
+            <p>Latif Abad, Hyderabad<br>
+            1 week ago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      <!-- CARDS END -->
+    </div>
+    <!-- JOBS CARDS SECTION END -->
+    <!--cards section END-->
+  </div>
+  <div class="button">
+    <button>Load more</button>
+  </div>
+  <!-- footer -->
+  <div class="footer1 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="footerimg col col-6 col-sm-6 col-md-4">
+          <img src="./assets/olxmob.webp" alt="">
+        </div>
+        <div class="footercontent col col-6 col-sm-6 col-md-4">
+          <h2 class="mt-3">TRY THE OLX APP</h2>
+          <p>Buy, sell and find just about anything using the app on your mobile.</p>
+        </div>
+        <div class="footerapp col col-12 col-sm-12 col-md-4">
+          <div>
+            <p class="mt-5">GET YOUR APP Today</p>
+          </div>
+          <img src="./assets/appstore.svg" alt="">
+          <img src="./assets/googleplay.svg" alt="">
+          <img src="./assets/iconAppGallery.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer2 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="footer2content col col-6 col-sm-4 col-md-2">
+          <h5 class="mt-3">POPULAR CATEGORIES</h5>
+          <p>Cars</p>
+          <p>Flats for rent</p>
+          <p>Mobile Phones</p>
+          <p>Jobs</p>
+        </div>
+        <div class="footer2content col col-6 col-sm-4 col-md-2">
+          <h5 class="mt-3">TRENDING SEARCHES</h5>
+          <p>Bikes</p>
+          <p>Watches</p>
+          <p>Books</p>
+          <p>Dogs</p>
+        </div>
+        <div class="footer2content col col-6 col-sm-4 col-md-3">
+          <h5 class="mt-3">ABOUT US</h5>
+          <p>About EMPG</p>
+          <p>OLX Blog</p>
+          <p>Contact US</p>
+          <p>OLX for Businesses</p>
+        </div>
+        <div class="footer2content col col-6 col-sm-4 col-md-2">
+          <h5 class="mt-3">OLX</h5>
+          <p>Help</p>
+          <p>Sitemap</p>
+          <p>Terms of use</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footerapp2 col col-12 col-sm-6 col-md-3">
+          <div>
+            <p class="mt-3">FOLLOW US</p>
+          </div>
+          <div>
+            <img src="./assets/f1.svg" class="footerappimg">
+            <img src="./assets/F2.svg" class="footerappimg">
+            <img src="./assets/f3.svg" class="footerappimg">
+            <img src="./assets/F4.svg" class="footerappimg">
+          </div>
+          <div>
+            <img src="./assets/appstore.svg" class="footerappimg2">
+            <img src="./assets/googleplay.svg" class="footerappimg2">
+            <img src="./assets/iconAppGallery.svg" class="footerappimg2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer3 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <p> <b> Free Classifieds in Pakistan </b>. © 2006-2024 OLX</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
