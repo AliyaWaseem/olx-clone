@@ -20,6 +20,26 @@
 </head>
 
 <body>
+  <!--Overlay for alert box-->
+  <div id="alertOverlay" class="alert-overlay"></div>
+
+  <!--Custom Alert box -->
+  <div  id="customAlert" class="alert-box">
+    <div class="row">
+      <div class="col-2 mt-5">
+        <img src="Assets/logo.png" alt="logo" class="alert-logo">
+      </div>
+      <div class="col-10">
+        <h3>Click 'Allow' to know about amazing discounts & offers!</h3>
+    <p>You can turn the notification off anytime in the browser settings.</p>
+    <div class="alert-buttons">
+      <button class="btn-cancel ms-2" onclick="closeAlert()">don't Allow</button>
+    <button class="alert-button" onclick="confirmAction()">Allow</button>
+      </div>
+    </div>
+    
+  </div>
+  </div>
   <!-- <div class="header">
         <div>
         <div class="top-bar-items">
@@ -509,7 +529,6 @@
       </div>
     </div>
     
-    <!-- BIKEs CARDS SECTION END -->
 
     <!-- HOUSES CARDS SECTION START -->
     <div class="house-card" id="house-card">
@@ -842,6 +861,27 @@
     </div>
   </div>
 
+<script>
+  // function to show the alert box
+  function showAlert() {
+    document.getElementById('customAlert').style.display = 'block';
+    document.getElementById('alertOverlay').style.display = 'block';
+  }
+  // function to close the alert box
+  function closeAlert() {
+    document.getElementById('customAlert').style.display = 'none';
+    document.getElementById('alertOverlay').style.display = 'none';
+  }
+  // function to show the alert box automatically when the page loads
+  window.onload = function() {
+    showAlert();
+  };
+  //Action for confirm button
+ function confirmAction() {
+  closeAlert();
+ }
+
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
